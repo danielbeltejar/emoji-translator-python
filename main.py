@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 
-@app.post("/v1/translator/python")
+@app.post("/")
 async def translate_realtime(request: Request):
     # Measure the start time
     start_time = time.perf_counter()
